@@ -1,0 +1,4 @@
+1.安装python3.10
+2.pip 安装project/requirements.txt依赖库（torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1）建议使用指令
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
+3.pip 安装project/nvdiffrast-0.3.1-cp310-cp310-linux_x86_64.whl

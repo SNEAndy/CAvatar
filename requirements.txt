@@ -1,0 +1,21 @@
+lingua-language-detector==2.0.2
+diffusers==0.27.2
+einops==0.8.0
+inflect==7.4.0
+librosa==0.10.2
+lingua==4.15.0
+numpy
+pydub==0.25.1
+regex==2024.11.6
+tiktoken==0.7.0
+#torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
+transformers==4.44.2
+#WeTextProcessing==1.0.2
+imageio==2.36.0
+kornia==0.7.4
+trimesh==3.9.20
+opencv-python
+pillow
+scikit-image
+scipy==1.14.1
+conda install -c conda-forge pynini==2.1.5 && pip install WeTextProcessing==1.0.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
