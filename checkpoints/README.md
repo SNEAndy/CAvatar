@@ -1,0 +1,1 @@
+download checkpoints for SadTalker
