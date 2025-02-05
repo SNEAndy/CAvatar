@@ -105,7 +105,7 @@ if __name__ == '__main__':
             textInputPaths.append(os.path.join(inputDir, f'text/{i}/index.txt'))
             audioOutPaths.append(path)
         for i in range(1, 4):
-            path = os.path.join(outputDir, f'audio/{i}')
+            path = os.path.join(outputDir, f'video/{i}')
             videoOutPaths.append(path)
 
         arrayIndex = 0
@@ -188,13 +188,14 @@ if __name__ == '__main__':
                         #视频，请实现播报视频生成
                         print(f"请完成播报视频生成能力")
                         current_root_path = os.path.split(sys.argv[0])[0]
-                        exitPaths=os.listdir("infer_results/audio")
+                        tmp_path=os.path.join(opt.outputDir,"audio")
+                        exitPaths=os.listdir(tmp_path)
                         for i in range(len(exitPaths)):
 
                         # pic_path = opt.source_image
                         # audio_path = opt.driven_audio
-                            pic_path=os.path.join(picInputPaths[i+1],"index.png")
-                            audio_path=os.path.join("infer_results/audio",str(i+1)+"/"+str(timestringCounts[i])+"_chinese.wav")
+                            pic_path=os.path.join(picInputPaths[i],"index.png")
+                            audio_path=os.path.join(tmp_path,str(i+1)+"/"+str(timestringCounts[i])+"_chinese.wav")
 
                             # save_dir = os.path.join(args.result_dir, strftime("%Y_%m_%d_%H.%M.%S"))
                             save_dir = os.path.join(opt.outputDir, "video/"+str(i+1)+'/')
